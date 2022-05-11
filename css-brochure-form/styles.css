@@ -1,0 +1,47 @@
+h2 {
+  text-align: center;
+  margin: 15px;
+  font-family: Calibri, sans-serif;
+  color: #e06767;
+}
+
+form {
+  margin: 10px;
+  font-family: Calibri, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  border-radius: 80px;
+}
+
+#all {
+  margin: auto;
+  width: 50%;
+}
+
+label {
+  margin-left: 15px;
+}
+
+input {
+  text-align: center;
+  width: 385px;
+  height: 35px;
+  margin-bottom: 15px;
+}
+
+select {
+  width: 385px;
+  height: 35px;
+  border-radius: 2px;
+  margin-bottom: 15px;
+}
+
+button {
+  background-color: #e06767;
+  border: none;
+  color: white;
+  border-radius: 40px;
+  margin-right: 80px;
+  padding: 8px 15px;
+  float: right;
+}
