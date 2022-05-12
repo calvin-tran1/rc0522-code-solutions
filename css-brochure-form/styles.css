@@ -18,6 +18,10 @@ form {
   width: 20%;
 }
 
+label {
+  margin-left: 15px;
+}
+
 input {
   width: 385px;
   height: 35px;
