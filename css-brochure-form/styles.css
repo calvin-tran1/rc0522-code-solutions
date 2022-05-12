@@ -15,15 +15,10 @@ form {
 
 #all {
   margin: auto;
-  width: 50%;
-}
-
-label {
-  margin-left: 15px;
+  width: 20%;
 }
 
 input {
-  text-align: center;
   width: 385px;
   height: 35px;
   margin-bottom: 15px;
@@ -41,7 +36,7 @@ button {
   border: none;
   color: white;
   border-radius: 40px;
-  margin-right: 80px;
+  margin-left: 310px;
   padding: 8px 15px;
-  float: right;
+}
 }
