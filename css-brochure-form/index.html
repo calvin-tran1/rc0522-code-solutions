@@ -14,31 +14,42 @@
     <h2>LEARN MORE</h2>
   </header>
   <form method="post">
-    <div id="all">
-      <label for="email">COMPANY EMAIL</label>
-      <div id="email">
-        <input type="text" name="email" placeholder="sally&#64;company&#46;co">
+    <fieldset>
+      <div class="email-wrapper">
+        <label for="email">COMPANY EMAIL</label>
+        <div class="email">
+          <input type="text" name="email" placeholder="sally&#64;company&#46;co">
+        </div>
       </div>
-      <label for="name">NAME</label>
-      <div id="name">
-        <input type="text" name="name" placeholder="Sally Smith">
+    </br>
+      <div class="name-wrapper">
+        <label for="name">NAME</label>
+        <div class="name">
+          <input type="text" name="name" placeholder="Sally Smith">
+        </div>
       </div>
-      <label for="location">WHERE ARE YOU HIRING?</label>
-      <div id="location">
-        <input type="text" name="location" placeholder="City&#44; Country">
+    </br>
+      <div class="location-wrapper">
+        <label for="location">WHERE ARE YOU HIRING?</label>
+        <div class="location">
+          <input type="text" name="location" placeholder="City&#44; Country">
+        </div>
       </div>
-      <label for="engineers">HOW MANY ENGINEERS ARE YOU HIRING IN THE NEXT 6 MONTHS?</label>
-      <div id="engineers">
-        <select name="engineers">
-          <option value="1-2-engineers">1-2 Engineers</option>
-          <option value="3-4-engineers">3-4 Engineers</option>
-          <option value="5-6-engineers">5-6 Engineers</option>
-        </select>
+    </br>
+      <div class="engineers-wrapper">
+        <label for="engineers">HOW MANY ENGINEERS ARE YOU HIRING IN THE NEXT 6 MONTHS?</label>
+        <div class="engineers">
+          <select name="engineers">
+            <option value="1-2-engineers">1-2 Engineers</option>
+            <option value="3-4-engineers">3-4 Engineers</option>
+            <option value="5-6-engineers">5-6 Engineers</option>
+          </select>
+        </div>
       </div>
-      <div id="submit">
+      <div class="submit">
         <button type="submit">SUBMIT</button>
       </div>
-    </div>
+    </fieldset>
   </form>
 </body>
 </html>
