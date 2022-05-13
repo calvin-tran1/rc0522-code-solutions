@@ -9,6 +9,7 @@ body {
 
 .row {
   display: flex;
+  margin: auto;
 }
 
 .column-full {
@@ -17,6 +18,7 @@ body {
 }
 
 .column-half {
+  display: flex;
   width: 50%;
   margin: 10 auto;
   max-height: 100%;
@@ -24,15 +26,13 @@ body {
 
 .image {
   width: 20%;
-}
-
-img {
-  float: left;
+  margin: 5 auto;
+  margin-right: 60px;
 }
 
 .text {
-  margin: 2.5em auto;
   width: 80%;
+  margin-top: 45px;
 }
 
 header {
