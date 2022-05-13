@@ -1,0 +1,63 @@
+body {
+  font-family: Karla, sans-serif;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.column-full {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.column-half {
+  width: 50%;
+  margin: 10 auto;
+  max-height: 100%;
+}
+
+.image {
+  width: 20%;
+}
+
+img {
+  float: left;
+}
+
+.text {
+  margin: 2.5em auto;
+  width: 80%;
+}
+
+header {
+  text-align: center;
+  margin: 3.2em auto;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+p {
+  overflow: hidden;
+  line-height: 28px;
+}
+
+button {
+  text-align: center;
+  margin: auto;
+  width: 170px;
+  height: 40px;
+  border-style: solid;
+  color: #e15551;
+  background-color: white;
+  border-color: #e15551;
+  border-width: 2px;
+  font-weight: bold;
+}
