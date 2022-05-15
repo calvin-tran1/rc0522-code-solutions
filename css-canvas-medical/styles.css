@@ -1,19 +1,23 @@
 .container {
-  max-width: 1150px;
+  max-width: 100%;
   margin: 1em auto;
+  position: relative;
 }
 
 .row {
   display: flex;
   justify-content: center;
+  flex-basis: 1150px;
+  margin: 0 auto;
 }
 
-.column-one-fourth {
-  width: 25%;
-}
-
-.column-three-fourths {
-  width: 75%;
+.row-grey {
+  display: flex;
+  position: relative;
+  height: 370px;
+  background-color: grey;
+  justify-content: center;
+  flex-basis: 1150px;
 }
 
 .column-fifty-five {
@@ -24,22 +28,36 @@
 .column-one-third {
   width: calc(100% /3);
   text-align: center;
-
-  /* align: center; */
+  flex-basis: calc(1150px / 3);
 }
 
 .column-half {
   width: 50%;
+  position: relative;
+  flex-basis: 575px;
+}
+
+.column-one-fourth {
+  width: 25%;
+  position: relative;
+  flex-basis: calc(1150px / 4);
+}
+
+.column-full {
+  width: 100%;
+  position: relative;
+  flex-basis: 1150px;
 }
 
 .blue-canvas-logo {
   position: relative;
-  top: 28px;
-  max-width: 50%;
-  max-height: 50%;
+  top: 15px;
+  max-width: 30%;
+  max-height: 30%;
 }
 
 .hero {
+  margin-top: 50px;
   width: 1150px;
   height: 607px;
   background-image: url("images/hero.jpg");
@@ -47,7 +65,7 @@
 }
 
 .overlay {
-  background: linear-gradient(transparent, rgb(0 0 0 / 75%));
+  background: linear-gradient(transparent, rgb(95 95 95 / 30%));
   width: 1150px;
   height: 607px;
 }
@@ -72,20 +90,20 @@ span {
 }
 
 header {
+  margin-bottom: 5px;
   display: flex;
-  font-family: Avenir, sans-serif;
+  position: relative;
+  font-family: avenir, sans-serif;
+  border-bottom: 1px solid lightgrey;
 }
 
-ul {
+.navbar {
   display: flex;
   list-style: none;
-  margin-bottom: 20px;
-  margin-left: 290px;
-  justify-content: flex-end;
 }
 
-li {
-  padding: 20px;
+.navbar > li {
+  padding: 0 20px;
 }
 
 a {
@@ -95,7 +113,7 @@ a {
 }
 
 .contact-us {
-  background-color: rgb(55 55 189);
+  background-color: #0a4265;
   padding: 10px;
   color: white;
   border-style: none;
@@ -110,7 +128,7 @@ a {
 }
 
 .get-started {
-  background-color: rgb(55 55 189);
+  background-color: #0a4265;
   padding: 15px 45px;
   color: white;
   border-style: none;
@@ -122,28 +140,116 @@ a {
   cursor: pointer;
 }
 
-.hero-get-started {
+.get-started-button1 {
   position: absolute;
   left: 70px;
   bottom: 85px;
 }
 
 .clinicians {
-  padding-top: 70px;
+  padding-top: 50px;
   font-family: "Tiempos Headline", sans-serif;
-  font-size: 1.7rem;
-  color: rgb(94 94 94);
+  font-size: 1.75rem;
+  font-weight: lighter;
+  color: grey;
 }
 
 .clinicians-about {
   font-family: avenir, sans-serif;
-  font-size: 0.8rem;
-  color: rgb(94 94 94);
-  font-weight: bold;
-  line-height: 20px;
+  font-size: 0.9rem;
+  color: grey;
+  line-height: 25px;
   margin-bottom: 70px;
 }
 
-.locations {
-  line-height: 20px;
+.locations-column1 {
+  list-style: none;
+  text-align: center;
+}
+
+.locations-column1 > li {
+  margin-bottom: 20px;
+  margin-left: 20px;
+  font-family: avenir, sans-serif;
+  color: grey;
+}
+
+.locations-column2 {
+  list-style: none;
+  text-align: center;
+}
+
+.locations-column2 > li {
+  margin-bottom: 20px;
+  margin-right: 20px;
+  font-family: avenir, sans-serif;
+  color: grey;
+}
+
+h2 {
+  margin-top: 110px;
+  font-family: "Tiempos Headline", sans-serif;
+  color: grey;
+  font-weight: lighter;
+}
+
+.schedule-meeting {
+  margin-bottom: 40px;
+  font-family: avenir, sans-serif;
+  color: grey;
+  font-size: 0.85rem;
+}
+
+.get-started-button2 {
+  margin-top: 110px;
+  position: absolute;
+  right: 0;
+}
+
+.white-canvas-logo {
+  margin-top: 70px;
+  margin-bottom: 25px;
+  max-width: 20%;
+  max-height: 20%;
+}
+
+.info {
+  margin-bottom: 70px;
+  font-family: avenir, sans-serif;
+  color: white;
+  font-size: 0.85rem;
+  line-height: 25px;
+}
+
+.company-list {
+  margin-top: 70px;
+  list-style: none;
+  color: white;
+  font-family: avenir, sans-serif;
+  line-height: 35px;
+}
+
+.product-list {
+  margin-top: 70px;
+  list-style: none;
+  color: white;
+  font-family: avenir, sans-serif;
+  line-height: 35px;
+}
+
+.footer {
+  display: flex;
+  padding-top: 30px;
+  list-style: none;
+  color: grey;
+  font-family: avenir, sans-serif;
+}
+
+.privacyterms {
+  padding-right: 50px;
+  font-size: 0.85rem;
+}
+
+.contactus-footer {
+  font-size: 0.85rem;
 }
