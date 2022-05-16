@@ -12,7 +12,7 @@ student.livesInIrvine = false;
 student.previousOccupation = 'sales';
 
 console.log('value of student.livesInIrvine', student.livesInIrvine);
-console.log('value of student.previous.Occupation', student.previousOccupation);
+console.log('value of student.previousOccupation', student.previousOccupation);
 
 var vehicle = {
   make: 'porsche',
