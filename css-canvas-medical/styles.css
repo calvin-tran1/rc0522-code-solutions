@@ -1,0 +1,265 @@
+.container {
+  max-width: 100%;
+  margin: 1em auto;
+  position: relative;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-basis: 1150px;
+  margin: 0 auto;
+}
+
+.row-grey {
+  display: flex;
+  position: relative;
+  height: 370px;
+  background-color: grey;
+  justify-content: center;
+  flex-basis: 1150px;
+}
+
+.row-lightgrey {
+  display: flex;
+  position: relative;
+  background-color: rgb(245 245 245);
+  justify-content: center;
+  flex-basis: 1150px;
+}
+
+.column-fifty-five {
+  width: 55%;
+  position: relative;
+}
+
+.column-one-third {
+  width: calc(100% /3);
+  text-align: center;
+  flex-basis: calc(1150px / 3);
+}
+
+.column-half {
+  width: 50%;
+  position: relative;
+  flex-basis: 575px;
+}
+
+.column-one-fourth {
+  width: 25%;
+  position: relative;
+  flex-basis: calc(1150px / 4);
+}
+
+.column-full {
+  width: 100%;
+  position: relative;
+  flex-basis: 1150px;
+}
+
+.blue-canvas-logo {
+  position: relative;
+  top: 15px;
+  max-width: 30%;
+  max-height: 30%;
+}
+
+.hero {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 1150px;
+  height: 607px;
+  background-image: url("images/hero.jpg");
+  background-size: cover;
+}
+
+.overlay {
+  background: linear-gradient(transparent, rgb(95 95 95 / 30%));
+  width: 1150px;
+  height: 607px;
+}
+
+span {
+  font-family: "Tiempos Headline", sans-serif;
+  color: white;
+  font-size: 2.5rem;
+  position: absolute;
+  left: 70px;
+  top: 100px;
+}
+
+.about {
+  font-family: Avenir, sans-serif;
+  color: white;
+  position: absolute;
+  font-size: 1.1rem;
+  line-height: 30px;
+  left: 70px;
+  top: 200px;
+}
+
+header {
+  margin-bottom: 5px;
+  display: flex;
+  position: relative;
+  font-family: avenir, sans-serif;
+  border-bottom: 1px solid lightgrey;
+}
+
+.navbar {
+  display: flex;
+  list-style: none;
+}
+
+.navbar > li {
+  padding: 0 20px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(172 172 172);
+  font-size: 1rem;
+}
+
+.contact-us {
+  background-color: #0a4265;
+  padding: 10px;
+  color: white;
+  border-style: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  position: relative;
+  bottom: 10px;
+}
+
+.contact-us:hover {
+  cursor: pointer;
+}
+
+.get-started {
+  background-color: #0a4265;
+  padding: 15px 45px;
+  color: white;
+  border-style: none;
+  border-radius: 4px;
+  font-size: 1.2rem;
+}
+
+.get-started:hover {
+  cursor: pointer;
+}
+
+.get-started-button1 {
+  position: absolute;
+  left: 70px;
+  bottom: 85px;
+}
+
+.clinicians {
+  font-family: "Tiempos Headline", sans-serif;
+  font-size: 1.75rem;
+  font-weight: lighter;
+  color: grey;
+}
+
+.clinicians-about {
+  font-family: avenir, sans-serif;
+  font-size: 0.9rem;
+  color: grey;
+  line-height: 25px;
+  margin-bottom: 70px;
+}
+
+.locations-column1 {
+  list-style: none;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.locations-column1 > li {
+  margin-bottom: 20px;
+  margin-left: 20px;
+  font-family: avenir, sans-serif;
+  color: grey;
+}
+
+.locations-column2 {
+  list-style: none;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.locations-column2 > li {
+  margin-bottom: 20px;
+  margin-right: 20px;
+  font-family: avenir, sans-serif;
+  color: grey;
+}
+
+h2 {
+  margin-top: 40px;
+  font-family: "Tiempos Headline", sans-serif;
+  color: grey;
+  font-weight: lighter;
+}
+
+.schedule-meeting {
+  margin-bottom: 40px;
+  font-family: avenir, sans-serif;
+  color: grey;
+  font-size: 0.85rem;
+}
+
+.get-started-button2 {
+  margin-top: 40px;
+  position: absolute;
+  right: 0;
+}
+
+.white-canvas-logo {
+  margin-top: 70px;
+  margin-bottom: 25px;
+  max-width: 20%;
+  max-height: 20%;
+}
+
+.info {
+  margin-bottom: 70px;
+  font-family: avenir, sans-serif;
+  color: white;
+  font-size: 0.85rem;
+  line-height: 25px;
+}
+
+.company-list {
+  margin-top: 70px;
+  list-style: none;
+  color: white;
+  font-family: avenir, sans-serif;
+  line-height: 35px;
+}
+
+.product-list {
+  margin-top: 70px;
+  list-style: none;
+  color: white;
+  font-family: avenir, sans-serif;
+  line-height: 35px;
+}
+
+.footer {
+  display: flex;
+  padding-top: 30px;
+  list-style: none;
+  color: grey;
+  font-family: avenir, sans-serif;
+}
+
+.privacyterms {
+  padding-right: 50px;
+  font-size: 0.85rem;
+}
+
+.contactus-footer {
+  font-size: 0.85rem;
+}
