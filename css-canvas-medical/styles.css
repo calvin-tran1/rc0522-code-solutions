@@ -20,6 +20,14 @@
   flex-basis: 1150px;
 }
 
+.row-lightgrey {
+  display: flex;
+  position: relative;
+  background-color: rgb(245 245 245);
+  justify-content: center;
+  flex-basis: 1150px;
+}
+
 .column-fifty-five {
   width: 55%;
   position: relative;
@@ -58,6 +66,7 @@
 
 .hero {
   margin-top: 50px;
+  margin-bottom: 50px;
   width: 1150px;
   height: 607px;
   background-image: url("images/hero.jpg");
@@ -147,7 +156,6 @@ a {
 }
 
 .clinicians {
-  padding-top: 50px;
   font-family: "Tiempos Headline", sans-serif;
   font-size: 1.75rem;
   font-weight: lighter;
@@ -165,6 +173,7 @@ a {
 .locations-column1 {
   list-style: none;
   text-align: center;
+  padding-bottom: 50px;
 }
 
 .locations-column1 > li {
@@ -177,6 +186,7 @@ a {
 .locations-column2 {
   list-style: none;
   text-align: center;
+  padding-bottom: 50px;
 }
 
 .locations-column2 > li {
@@ -187,7 +197,7 @@ a {
 }
 
 h2 {
-  margin-top: 110px;
+  margin-top: 40px;
   font-family: "Tiempos Headline", sans-serif;
   color: grey;
   font-weight: lighter;
@@ -201,7 +211,7 @@ h2 {
 }
 
 .get-started-button2 {
-  margin-top: 110px;
+  margin-top: 40px;
   position: absolute;
   right: 0;
 }
