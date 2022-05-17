@@ -1,0 +1,46 @@
+.container {
+  max-width: 100%;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
+}
+
+h2 {
+  font-family: barlow, sans-serif;
+  text-align: center;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.row {
+  display: flex;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.column-one-fourth {
+  display: flex;
+  justify-content: center;
+  width: 380px;
+}
+
+.screens {
+  max-width: 60%;
+  padding: 0;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  max-width: 20%;
+}
+
+.text {
+  text-align: center;
+  font-family: barlow, sans-serif;
+}
+
+p {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
