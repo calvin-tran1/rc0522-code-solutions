@@ -17,5 +17,5 @@ var bookshelf = [
 ];
 
 console.log('value of bookshelf[1].author:', bookshelf[1].author);
-console.log('value of bookshelf.isbn[0]:', bookshelf[0].isbn);
+console.log('value of bookshelf[0].isbn:', bookshelf[0].isbn);
 console.log('value of bookshelf[2].title:', bookshelf[2].title);
