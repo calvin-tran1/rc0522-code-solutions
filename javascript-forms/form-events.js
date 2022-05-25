@@ -1,6 +1,6 @@
 function handleFocus(event) {
   console.log('focus event fired');
-  console.log(' event.target.name', event.target.name);
+  console.log(event.target.name);
 }
 
 function handleBlur(event) {
@@ -17,7 +17,13 @@ var $userEmail = document.querySelector('#user-email');
 var $userMessage = document.querySelector('#user-message');
 
 $userName.addEventListener('focus', handleFocus);
+$userName.addEventListener('blur', handleFocus);
+$userName.addEventListener('input', handleFocus);
 
+$userEmail.addEventListener('focus', handleBlur);
 $userEmail.addEventListener('blur', handleBlur);
+$userEmail.addEventListener('input', handleBlur);
 
+$userMessage.addEventListener('focus', handleInput);
+$userMessage.addEventListener('blur', handleInput);
 $userMessage.addEventListener('input', handleInput);
