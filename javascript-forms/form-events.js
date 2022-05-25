@@ -17,13 +17,13 @@ var $userEmail = document.querySelector('#user-email');
 var $userMessage = document.querySelector('#user-message');
 
 $userName.addEventListener('focus', handleFocus);
-$userName.addEventListener('blur', handleFocus);
-$userName.addEventListener('input', handleFocus);
+$userName.addEventListener('blur', handleBlur);
+$userName.addEventListener('input', handleInput);
 
-$userEmail.addEventListener('focus', handleBlur);
+$userEmail.addEventListener('focus', handleFocus);
 $userEmail.addEventListener('blur', handleBlur);
-$userEmail.addEventListener('input', handleBlur);
+$userEmail.addEventListener('input', handleInput);
 
 $userMessage.addEventListener('focus', handleInput);
-$userMessage.addEventListener('blur', handleInput);
+$userMessage.addEventListener('blur', handleBlur);
 $userMessage.addEventListener('input', handleInput);
