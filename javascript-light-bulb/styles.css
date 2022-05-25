@@ -1,0 +1,63 @@
+.container.white {
+  max-width: 100%;
+  height: 100vh;
+  background-color: #ffffe0;
+}
+
+.container.black {
+  max-width: 100%;
+  height: 100vh;
+  background-color: #0c090a;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.glow.light {
+  display: flex;
+  background-color: #ffffc2;
+  border-radius: 50%;
+  width: 123px;
+  height: 123px;
+  margin-top: 24%;
+  position: absolute;
+}
+
+.lightbulb.on {
+  display: flex;
+  background-color: #faf884;
+  border-style: none;
+  border-radius: 50%;
+  width: 115px;
+  height: 115px;
+  margin-top: 25%;
+  position: absolute;
+}
+
+.glow.dark {
+  display: flex;
+  background-color: #000;
+  border-radius: 50%;
+  width: 123px;
+  height: 123px;
+  margin-top: 24%;
+  position: absolute;
+}
+
+.lightbulb.off {
+  display: flex;
+  background-color: #52595d;
+  border-style: none;
+  border-radius: 50%;
+  width: 115px;
+  height: 115px;
+  margin-top: 25%;
+  position: absolute;
+}
+
+.lightbulb:active {
+  cursor: pointer;
+}
