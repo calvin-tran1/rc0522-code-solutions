@@ -1,0 +1,27 @@
+body {
+  font-family: calibri, sans-serif;
+  font-size: 2rem;
+}
+
+.container {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.typing-test {
+  margin-top: 200px;
+}
+
+.current {
+  text-decoration: underline black;
+}
+
+.correct {
+  color: green;
+}
+
+.incorrect {
+  color: red;
+  text-decoration: underline red;
+}
