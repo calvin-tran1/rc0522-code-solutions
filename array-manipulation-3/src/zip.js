@@ -26,5 +26,12 @@ function zip(first, second) {
   for (var k = 0; k < subArr.length; k++) {
     masterArr.push(subArr[k]);
   }
+
   return masterArr;
 }
+
+// determine how many pairs of arrays are needed
+// pair all matching indexed elements into an array
+// push the pairs into their own indivual sub arrays
+// push sub arrays into a master array
+// this embarrassingly took me longer than it should have
