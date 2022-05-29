@@ -14,6 +14,17 @@ function titleCase(title) {
     if (title[i] === 'api') {
       title[i] = title[i].toUpperCase();
     }
+    if (title[i].includes('-')) {
+      var [before, after] = title[i].split('-');
+      var capBefore = before.charAt(0).toUpperCase() + before.substring(1);
+      title[i] = capBefore + '-' + after.charAt(0).toUpperCase() + after.substring(1);
+      title[i + 1] = title[i + 1].charAt(0).toUpperCase() + title[i + 1].substring(1);
+      i++;
+    }
+    if (title[i].includes(':')) {
+      title[i + 1] = title[i + 1].charAt(0).toUpperCase() + title[i + 1].substring(1);
+      i++;
+    }
     if (i > 0 && exceptions.includes(title[i])) {
       continue;
     }

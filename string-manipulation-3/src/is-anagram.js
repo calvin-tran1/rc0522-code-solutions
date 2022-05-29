@@ -1,5 +1,8 @@
 /* exported isAnagram */
 
+// remove all spaces
+// check if any characters within first string match the second
+
 function isAnagram(firstString, secondString) {
   var firstNoSpce = firstString.split(' ').join('');
   var secondNoSpce = secondString.split(' ').join('');
