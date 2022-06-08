@@ -1,0 +1,43 @@
+.container {
+  max-width: 750px;
+  margin: 5em auto;
+  border-style: solid;
+}
+
+.row {
+  display: flex;
+}
+
+.column-full {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.fa-angle-left,
+.fa-angle-right {
+  font-size: 3em;
+  cursor: pointer;
+  margin-top: 30%;
+}
+
+img {
+  max-width: 50%;
+  padding: 3rem 8rem 1rem;
+}
+
+.dot-index {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+.fa-solid.fa-circle-dot {
+  padding: 0 0.5rem;
+  cursor: pointer;
+}
+
+.fa-solid.fa-circle {
+  padding: 0 0.5rem;
+  cursor: pointer;
+}
