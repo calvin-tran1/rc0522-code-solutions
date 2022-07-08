@@ -5,6 +5,7 @@
     join "films" using ("filmId")
     join "castMembers" using ("filmId")
     join "actors" using ("actorId")
-   where "actorId" = 178
+   where "firstName" = 'Lisa'
+     and "lastName" = 'Monroe'
 group by "name"
 order by "genresAppeared" desc;
