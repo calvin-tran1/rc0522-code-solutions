@@ -43,6 +43,7 @@ app.post('/api/grades', (req, res) => {
   const sql = `
     insert into "grades" ("name", "course", "score")
     values ($1, $2, $3)
+    returning *
   `;
   const params = [name, course, score];
 
@@ -82,6 +83,7 @@ app.put('/api/grades/:gradeId', (req, res) => {
            "course" = $2,
            "score" = $3
      where "gradeId" = $4
+     returning *
   `;
   const params = [name, course, score, gradeId];
 
@@ -113,6 +115,7 @@ app.delete('/api/grades/:gradeId', (req, res) => {
   const sql = `
     delete from "grades"
     where "gradeId" = $1
+    returning *
   `;
   const params = [gradeId];
 
