@@ -27,15 +27,13 @@ const product = numbers.reduce((previousValue, currentValue) => {
 });
 console.log('product:', product);
 
-const sumTransactions = (balance, transaction) => {
-  if (transaction.type === 'withdrawal') {
-    return balance - transaction.amount;
+const balance = account.reduce((previousValue, currentValue) => {
+  if (currentValue.type === 'withdrawal') {
+    return previousValue - currentValue.amount;
   }
 
-  return balance + transaction.amount;
-};
-const initialBalance = 0;
-const balance = account.reduce(sumTransactions, initialBalance);
+  return previousValue + currentValue.amount;
+}, 0);
 console.log('balance:', balance);
 
 const composite = traits.reduce((previousValue, currentValue) => {
