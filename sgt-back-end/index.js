@@ -49,7 +49,7 @@ app.post('/api/grades', (req, res) => {
 
   db.query(sql, params)
     .then(result => {
-      res.status(201).json(result.rows);
+      res.status(201).json(result.rows[0]);
     })
     .catch(err => {
       console.error(err);
