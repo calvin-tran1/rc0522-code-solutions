@@ -12,7 +12,6 @@ const element = (
     <CustomButton text="React!" />
   </div>
 );
-
 const container = document.querySelector('#root');
 const root = ReactDOM.createRoot(container);
 
