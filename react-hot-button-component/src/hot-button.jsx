@@ -45,7 +45,7 @@ export class HotButton extends React.Component {
     }
 
     return (
-      <button className={`btn ${btnColor}`} onClick={this.handleClick}>
+      <button className={`${btnColor}`} onClick={this.handleClick}>
         Hot Button
       </button>
     );
