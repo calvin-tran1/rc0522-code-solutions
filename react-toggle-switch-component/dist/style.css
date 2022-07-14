@@ -1,0 +1,47 @@
+button {
+  width: 3.25rem;
+  height: 1.5rem;
+  border-radius: 1rem;
+  margin-top: 0.5em;
+}
+
+.on {
+  background-color: green;
+}
+
+.off {
+  background-color: rgb(243 237 237);
+}
+
+.slider-on {
+  height: 19px;
+  width: 19px;
+  background-color: gray;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 0.15em;
+  display: inline-block;
+  position: absolute;
+  left: 37px;
+  top: 15px;
+}
+
+.slider-off {
+  height: 19px;
+  width: 19px;
+  background-color: gray;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 0.15em;
+  display: inline-block;
+  position: absolute;
+  left: 8px;
+  top: 15px;
+}
+
+.text {
+  margin-left: 0.5em;
+  font-weight: bold;
+  position: absolute;
+  top: 18px;
+}
