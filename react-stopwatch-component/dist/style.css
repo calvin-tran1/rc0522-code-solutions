@@ -1,0 +1,18 @@
+.watch {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  font-size: 1.75rem;
+  background-color: white;
+  cursor: pointer;
+}
+
+.play-pause-btn {
+  display: block;
+  border-style: none;
+  background-color: transparent;
+  margin-top: 1em;
+  margin-left: 1.73em;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
