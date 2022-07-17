@@ -4,25 +4,31 @@ export default class Accordion extends React.Component {
   constructor(props) {
     super(props);
     this.handleClick = this.handleClick.bind(this);
-    this.state = { lang: '' };
+    this.state = { clicked: '' };
   }
 
   handleClick(e) {
-    this.setState({ lang: e.target.getAttribute('name') });
+    this.setState({ clicked: e.target.getAttribute('name') });
+
+    if (e.target.getAttribute('name') === this.state.clicked) {
+      this.setState({ clicked: '' });
+    }
   }
 
   render() {
 
     return (
       <ul>
-        {this.props.languages.map(lang => {
+        {this.props.languages.map((lang, index) => {
           return (
-          <li key={lang.shorthand}>
-            <div name={lang.shorthand} className="lang" onClick={this.handleClick}>
-              {lang.language}
-            </div>
-            <LanguageDescription description={lang.description} />
-          </li>
+            <Language
+              key={index}
+              name={lang.shorthand}
+              language={lang.language}
+              description={lang.description}
+              onClick={this.handleClick}
+              clicked={this.state.clicked}
+            />
           );
         })
       }
@@ -31,10 +37,23 @@ export default class Accordion extends React.Component {
   }
 }
 
-function LanguageDescription(props) {
+function Language(props) {
   return (
-    <div name={props.shorthand} className="lang-description">
-      {props.description}
-    </div>
+    <li>
+      <div name={props.name} className="lang" onClick={props.onClick}>
+        {props.language}
+      </div>
+      <LanguageDescription description={props.description} match={props.name === props.clicked} />
+    </li>
   );
+}
+
+function LanguageDescription(props) {
+  if (props.match) {
+    return (
+      <div className="lang-description">
+        {props.description}
+      </div>
+    );
+  }
 }
