@@ -20,6 +20,8 @@ export default class Carousel extends React.Component {
   }
 
   handleClick(e) {
+
+    // dot indicators
     if (e.target.type === 'button') {
       const dataId = +e.target.getAttribute('data-id');
       this.setState({ index: dataId });
@@ -27,6 +29,7 @@ export default class Carousel extends React.Component {
       this.intervalId = setInterval(() => this.nextImage(), 3000);
     }
 
+    // previous image
     if (e.target.getAttribute('class') === 'fa-solid fa-angle-left') {
       if (this.state.index === 0) {
         this.setState({ index: this.props.images.length - 1 });
@@ -39,6 +42,7 @@ export default class Carousel extends React.Component {
       this.intervalId = setInterval(() => this.nextImage(), 3000);
     }
 
+    // next image
     if (e.target.getAttribute('class') === 'fa-solid fa-angle-right') {
       this.nextImage();
       clearInterval(this.intervalId);
