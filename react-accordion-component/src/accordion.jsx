@@ -8,11 +8,14 @@ export default class Accordion extends React.Component {
   }
 
   handleClick(e) {
-    this.setState({ clicked: e.target.getAttribute('name') });
+    const name = e.target.getAttribute('name');
 
-    if (e.target.getAttribute('name') === this.state.clicked) {
+    if (name === this.state.clicked) {
       this.setState({ clicked: '' });
+      return;
     }
+
+    this.setState({ clicked: name });
   }
 
   render() {
