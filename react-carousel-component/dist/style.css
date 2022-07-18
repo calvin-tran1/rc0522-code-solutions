@@ -1,0 +1,44 @@
+.container {
+  width: 650px;
+  border-style: solid;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  margin: 5em auto;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.dot-container {
+  display: flex;
+  justify-content: center;
+}
+
+i {
+  font-size: 2rem;
+  padding: 5em 4em;
+  cursor: pointer;
+}
+
+img {
+  max-width: 300px;
+  max-height: 300px;
+}
+
+button {
+  width: 1px;
+  height: 15px;
+  border-radius: 50%;
+  margin: 0 0.3em;
+  cursor: pointer;
+}
+
+.filled {
+  background-color: black;
+}
+
+.unfilled {
+  background-color: white;
+}
