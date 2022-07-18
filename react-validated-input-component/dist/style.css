@@ -1,0 +1,26 @@
+body {
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+input {
+  margin-top: 1em;
+  margin-right: 1em;
+  border-width: 0.2em;
+  border-color: black;
+}
+
+p {
+  font-size: 0.8rem;
+  color: red;
+}
+
+.fa-check {
+  font-weight: bold;
+  color: green;
+}
+
+.fa-xmark {
+  font-weight: bold;
+  color: red;
+}
