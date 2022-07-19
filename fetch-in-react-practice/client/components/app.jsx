@@ -96,9 +96,10 @@ export default class App extends React.Component {
     })
       .then(res => res.json())
       .then(data => {
-        const checkTodos = this.state.todos;
-        checkTodos.splice(index, 1, data);
-        this.setState({ todos: checkTodos });
+        const todosCopy = [...this.state.todos];
+        todosCopy[index] = data;
+
+        this.setState({ todos: todosCopy });
       })
       .catch(err => {
         console.error(err);
