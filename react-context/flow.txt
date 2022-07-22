@@ -1,0 +1,23 @@
+USER CAN SIGN UP:
+- POST method is used to access and enter data to the database
+- User enters a username and password into the input fields and submits the form in order to sign up
+- If no username/password is input, client responds with a 400 error message
+- Data is checked for a unique username as a requisite in order to be stored within the database
+- If input data meets all requisites, username is stored into the database along with a hashed version of the password
+- Upon successful form submission from the client, a fetch request is initiated, and a change to the hash route is made to the sign-in page
+
+USER CAN SIGN IN:
+- POST method is made by the server to send and verify if the login credentials are matched with the data within the database
+- User submits username and password into the input fields of the form, and a fetch request is made
+- If no username or password is found, client responds with a 401 error
+- Once both input fields are submitted for login, the database is queried to check if the username exists within the database. If not found, then client responds with a 401 error
+- If username is found, argon2 is used to verify that the input password is matched with the hashed password. If no match, client responds with 401 error.
+- If username and password/hashed password are successful matches, server is sent a JSON web token to allow user access to the page
+- After a successful login, hash route is updated to #(home page), which is then rendered with a rick n roll gif
+
+USER CAN STAY SIGNED IN:
+- Upon a successful login, the state's username and password token are stored in the browser's local storage allowing the user to remain signed in upon page refresh
+
+USER CAN SIGN OUT:
+- When the sign-out button is clicked, local storage is cleared, and state is set to null
+- Hash route is then changed to the sign-in page
